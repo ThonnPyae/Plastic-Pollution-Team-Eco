@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/te.png">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+      <a href="index.html"><img src="media/teameco.png" alt="Logo" class="logo"></a> 
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html"><b>Home</b></a></li>
+ 
+        <div class="dropdown_menu">
+            <li class="dropdown"><a href="pages/learn.html" target="_blank">Explore About Plastic Pollution</a></li>
+            <div class="dropdown_content">
+                <a href="pages/details.html">Details</a>
+                <a href="pages/alternatives.html">Alternatives</a>
+                <a href="pages/actions.html">Actions</a>
+            </div>      
+        </div>
+ 
+          <li><a href="pages/game.html" target="_blank">Game</a></li>
+          <li><a href="../PlasticPollution/pages/aboutus.html">About us</a></li>    
+        </ul>
+        <div class="hamburger" id="hamburger">
+          ☰
+        </div>
+      </nav>
+     
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+     
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+
+<div class="container">
+    <div class="overlay"> <h2> Plastic Pollution </h2>
+         <p id="catchphrase"> A single person can make a <b><em>difference</em></b> </p>
+    </div>
+</div>
+<br>
+<div class="parent1">
+  <div class="child1"> <h2> Talking about Plastic Catastrophies </h2>
+      <p> Hello, to all the viewers of this website, we're TeamEco. As children of the future, it is our job to address environmental challenges of our era. Among them, plastic pollution, a leading cause of environmental problems, is threatening the whole world as we speak. Every year, billions of plastic items are produced and millions end up on land or even in the ocean. Although plastic is useful in various industries, excess usage of plastic is harmful to the environment. Therefore, as humans ourselves, we should change these bad habits and exchange them for sustainable practices!</p>
+      <a href="pages/details.html">Learn More!</a>
+  <img src="media/pollution.jpg" alt="pollution">
+    </div>
+ </div>
+<div class="parent1">
+<div class="child1"> <h2> What's our goal with this website? </h2>
+    <p> Plastic is a normalized material used in everyday life. However, we are using too much of it. Plastic Pollution creates problems such as harming ecosystems, risking the lives of humans, disturbing the growth of plants and much more. Thus, our mission is to inform others by sharing our insights on plastic and help communities take action against plastic pollution while making it fun and easy to understand. Whether you're a student, adult or even an environmentalist, we all have a role in this world to make a difference. So, let's try to reach the horizons of an eco-friendly world where people of all ages can smile with joy and laughter to live in this beautiful world of ours.  </p>
+    <a href="pages/aboutus.html">About Us</a>
+    <img src="media/turtle-with-plastic-bag.jpg" alt="turtle">
+  </div>
+</div>
+<div class="next">
+  <a href="pages/learn.html">
+    <img src="media/plastic-bottle.png" alt="credit:juicy_fish">
+  </a>
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<footer id="footer">
+  <div class="footer">
+        <a href="index.html"><img src="media/teameco.png" height="100px" width="100px" alt="Logo" class="logo"></a>
+          <div class="section">
+        <div class="contacts"> <a> Contact </a> <p class="contact"> the.coding.bugs143@gmail.com</p> </div>
+        </div>
+       <div class="section"> <a href="pages/aboutus.html">About Us</a> </div>
+      
+           <div class="section"> <a href="references.docx"> Citations</a></div>
+          <div class="section"><a href="pages/settings.html"> Privacy & Policy </a></div>
+           <div class="section"> <a href="pages/donate.html"> Organizations </a></div>
+    </div>
+    <p id="cr">&copy; 2025 TeamEco. All rights reserved. Developed by The Coding Bugs.</p>
+</footer>
+</body>
+</html>

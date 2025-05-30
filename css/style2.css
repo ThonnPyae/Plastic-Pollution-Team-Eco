@@ -1,0 +1,347 @@
+/* donation page */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Bahnschrift;
+   
+}
+
+body {
+    background: #d5eeff;
+}
+ 
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #60B5FF;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+ 
+.logo{
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+ 
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+ 
+.nav-links li{
+    margin-left: 20px;
+}
+.nav-links li a{
+    background-color: #004d80;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.4s ease;
+}
+ 
+.nav-links li a:hover {
+    background-color: #ddf5ff;
+    color: rgb(0, 33, 77);
+    z-index: 1003;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.hamburger{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+ 
+/* Responsive */
+@media (max-width: 768px) {
+    .search-box {
+      width: 100%;
+      margin: 10px 0;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        background-color: #60B5FF;
+        top: 180px;
+        left: 0;
+        padding-bottom: 10px;
+    }
+   
+    .nav-links.active {
+      display: flex;
+    }
+ 
+    .nav-links li {
+      margin: 15px 0;
+      text-align: center;
+    }
+ 
+    .hamburger {
+      display: block;
+      z-index: 1001;
+    }
+}
+@media (max-width: 904px){
+    #navbar div{
+        overflow: hidden;
+    }
+}
+ 
+/* Dropdown button style */
+.dropdown{
+    color: white;
+    font-size: 16px;
+    border: none;
+    /* cursor: pointer; */
+}
+.dropdown_menu{
+    position: relative;
+    display: inline-block;
+}
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #AFDDFF;
+    border-radius: 30px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown_content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content a:hover{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px;
+}
+.dropdown_menu:hover .dropdown_content{
+    display: block;
+}
+
+/*Fade-In Animation*/
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* End in original position */
+    }
+}
+
+/*Donation Message Styles*/
+.donation-message {
+    font-size: 2em; /* Larger font size for emphasis */
+    color: #004d80; 
+    text-align: center; 
+    margin: 0; /* Remove margin to eliminate gap */
+    padding: 10px; /* Better readability */
+    background-color: #AFDDFF; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in; /* Apply fade-in animation */
+}
+
+/* Organization Logos */
+.organization-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    animation: fadeIn 5s ease-in;
+}
+
+.org-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.org-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    
+}
+
+
+
+/*Organization Section Styles*/
+.organization-section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.organization-section h2 {
+    text-align: center; 
+    color: #004d80; 
+    margin-bottom: 15px; 
+}
+
+/* 
+   Responsive Styles
+   */
+@media (max-width: 768px) {
+    .organization-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .org-logo {
+        width: 120px; /* Adjust for smaller screens */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        background-color: #60B5FF;
+        top: 180px;
+        left: 0;
+        padding-bottom: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+}
+
+p{
+    font-size: 20px;
+    color: #004d80;
+}
+
+
+h2{
+    margin: 10%;
+    animation: fadeIn 2s ease-in;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .Homeimage {
+        height: auto;
+    }
+}
+
+
+ 
+.content {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFECDB;
+    min-width: 120px;
+    border-radius: 4px;
+    margin-top: 3px;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+}
+/* Footer Container */
+footer {
+    background: #60B5FF;
+    padding: 20px 0;
+    color: #000;
+}
+ 
+ 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+ 
+/* Logo */
+.footer .logo {
+    margin-bottom: 0;
+    display: block;
+}
+ 
+/* Footer Section */
+.section {
+    flex: 1 1 200px;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+ 
+.section a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    margin: 4px 0; /* Tightened spacing */
+    transition: color 0.3s ease;
+}
+ 
+.section a:hover {
+    color: #004d80;
+}
+ 
+ 
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+ 
+ 
+.contacts strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #003366;
+}
+ 
+.contact {
+    font-size: 13px;
+    color: #222;
+    text-align: center;
+}
+ 
+/* Copyright */
+#cr {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #003366;
+}

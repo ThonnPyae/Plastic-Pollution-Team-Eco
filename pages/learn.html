@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/others.css">
+    <link rel="icon" type="image/x-icon" href="../media/te.png">
+    <title>Learn</title>
+</head>
+<body>
+    <nav class="navbar">
+      
+            <a href="index.html"><img src="../media/teameco.png" alt="Logo" class="logo"></a>
+          
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+ 
+        <div class="dropdown_menu">
+            <li class="dropdown"><a href="learn.html"><b>Explore About Plastic Pollution</b></a></li>
+            <div class="dropdown_content">
+                <a href="details.html">Details</a>
+                <a href="alternatives.html">Alternatives</a>
+                <a href="actions.html">Actions</a>
+            </div>      
+        </div>
+ 
+          <li><a href="game.html" target="_blank">Game</a></li>
+          <li><a href="aboutus.html">About us</a></li>    
+
+        </ul>
+          <!-- <div class="search-container">
+            <span class="search-icon">🔍︎</span>
+            <input type="text" placeholder="Search..." class="search-input">
+          </div> -->
+        <div class="hamburger" id="hamburger">
+          ☰
+        </div>
+      </nav>
+     
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+     
+        hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+
+
+<h2 id="learnhead">Explore about Plastic Pollution</h2>
+
+<h2 id="learnimpacts">Impact of Plastic Pollution in different Earth spheres</h3>
+<br>
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">Did you know?</div>
+    <div class="card-back">The world generates 400 million tonnes of plastic waste a year.</div>
+  </div>
+</div>
+<div class="learnbody">
+  <div class="float-effect">
+    <p>Geosphere</p>
+    <ul>
+      <li>Degrades soil quality</li>
+      <li>Causes problems for land animals who accidentally swallowed or inhaled plastic pollutants</li>
+      <li>Non-biodegradable plastic items fill up the landfills.</li>
+      <li>Plastic that are chlorinated can release harmful chemicals into the surrounding soil, which impacts the fertility of the soil.</li>
+      <li>Plastic particles has led to small living organisms on the geosphere to die out.</li>
+    </ul>
+    <br>
+    <img src="../media/beach.webp" alt="geo" class="sphere">
+  </div>
+  <br>
+  <div class="float-effect">
+    <p>Hydrosphere</p>
+    <ul>
+      <li>By 2050, plastic will likely outweigh all fish in the sea.</li>
+      <li>Plastic waste makes up 80% of all marine pollution.</li>
+      <li>Around 700 species of marine animals were affected by the microplastics in the ocean.</li>
+      <li>A study show that nearly all aquatic organisms ingest microplastics.</li>
+    </ul>
+    <br>
+    <img src="../media/2050.jpg" alt="hydro" class="sphere">
+  </div>
+  <br>
+  <div class="float-effect">
+    <p>Atmosphere</p>
+    <ul>
+      <li>Microplastics and nanoplastics have been found in the air particles according to The Center for International Environmental Law.</li>
+      <li>This means we're literally breathing plastic as we live.</li>
+      <li>It’s estimated that humans can inhale up to 22,000,000 micro- and nanoplastics every year.</li>
+      <li>Such tiny plastics can harm our human body, including the lungs.</li>
+    </ul>
+    <br>
+    <img src="../media/part.jpg" alt="atmo" class="sphere">
+  </div>
+  <br>
+  <div class="float-effect">
+    <p>Biosphere</p>
+    <ul>
+      <li>In summary, all living organisms and the entire world is affected by plastic pollution, with only the variation of how much each are affected.</li>
+    </ul>
+    <br>
+    <img src="../media/foodchain.jpg" alt="bio" class="sphere">
+  </div>
+</div>
+<br>
+
+<div class="video">
+  <h3>How are plastic recycled?</h3>
+  <p>A short video from online source, to show how plastics are actually recycled in industries.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9dO6A44co9A?si=qFIcc2LSXe4sSI-2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+  <br>
+  <footer id="footer">
+    <div class="footer">
+          <a href="index.html"><img src="../media/teameco.png" height="100px" width="100px" alt="Logo" class="logo"></a>
+            <div class="section">
+          <div class="contacts"> <a> Contact </a> <p class="contact"> the.coding.bugs143@gmail.com</p> </div>
+          </div>
+         <div class="section"> <a href="aboutus.html">About Us</a> </div>        
+             <div class="section"> <a href="../references.docx"> Citations</a></div>
+            <div class="section"><a href="settings.html"> Privacy & Policy</a></div>
+             <div class="section"> <a href="donate.html"> Donate </a></div>
+      </div>
+      <p id="cr">&copy; 2025 TeamEco. All rights reserved. Developed by The Coding Bugs.</p>
+  </footer>
+</body>
+</html>
