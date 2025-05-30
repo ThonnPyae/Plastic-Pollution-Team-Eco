@@ -1083,7 +1083,7 @@ button:hover {
     justify-content: space-around;
     flex-wrap: wrap;
 }
- 
+
 .son3 {
     flex: 1;
     flex-basis: 100px;
@@ -1136,6 +1136,7 @@ button:hover {
     transition-duration: 0.5s;
  
 }
+
  
 .son4 p{
     padding-top: 10px;
@@ -1150,21 +1151,38 @@ button:hover {
 .son4:hover {
     scale: 1.025;
 }
- 
-.son4 button{
-    background-color:#472183;
+
+.son4a a{
+    background-color:#1855c7;
     border: none;
-    color: white;
-    padding: 15px 32px;
+    padding: 3%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
 }
- 
-.son4 button:hover{
+
+.son4a:hover{
     scale: 1.045;
+    transition-duration: 0.5s;
 }
+.son4a a:hover{
+    color: white;
+}
+
+/* .son4 a{
+    background-color:#1855c7;
+    border: none;
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.son4 a:hover{
+    scale: 1.045;
+    color: white;
+} */
 .son4 img{
     width: 30%;
     border-radius: 5%;
